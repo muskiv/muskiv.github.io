@@ -1,0 +1,72 @@
+.three {
+    display: flex;
+    width: 600px;
+    height: 450px;
+    margin-left: 500px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    background: gold;
+}
+
+.first{
+    height: 160px;
+}
+
+.a {
+    width: 550px;
+    height: 150px;
+    background: gray;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+}
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.b {
+    width: 90%;
+    height: 40%;
+    background: red;
+}
+
+.c {
+    width: 25%;
+    height: 40%;
+    background: blue;
+}
+
+.d {
+    width: 25%;
+    height: 40%;
+    background: dodgerblue;
+}
+
+.e {
+    width: 25%;
+    height: 40%;
+    background: fuchsia;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.f {
+    width: 90%;
+    height: 90%;
+    background: firebrick;
+}
