@@ -1,11 +1,57 @@
-.wrap {
-    width: 500px;
+.h200 {
+    height: 200px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.h400 {
     height: 400px;
-    background: black;
+}
+
+.w130 {
+    width: 130px;
+}
+
+.w440 {
+    width: 440px;
+}
+
+.w500 {
+    width: 500px;
+}
+
+.ml500 {
+    margin-left: 500px;
+}
+
+.bgcornblue {
+    background: cornflowerblue;
+}
+
+.dfw{
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+}
+
+.jcsa{
     justify-content: space-around;
+}
+
+.fdc{
+    flex-direction: column;
+}
+
+.aic{
+align-items: center;
+}
+
+/*=============================*/
+
+.wrap {
+    background: black;
+    align-content: space-around;
     margin-left: 500px;
 }
 
@@ -18,28 +64,21 @@
 .block2 {
     background: blue;
     width: 290px;
-    height: 200px;
 }
 
 .block3 {
     background: green;
     width: 190px;
-    height: 200px;
 }
 
 /*=============================================*/
 
-.twoOne {
-    width: 500px;
+.two__one {
     height: 700px;
     background: grey;
     margin-top: 30px;
     margin-left: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 #header {
@@ -49,13 +88,7 @@
 }
 
 .main {
-    width: 500px;
-    height: 400px;
     background: palegreen;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 #menu {
@@ -68,29 +101,20 @@
 .post {
     width: 200px;
     height: 100px;
-    background: cornflowerblue;
 }
 
 #footer {
     background: coral;
     width: 450px;
     height: 100px;
-    align-items: flex-end;
 }
 
 /*=============================================*/
 
-.twoTwo {
-    width: 500px;
+.two__two {
     height: 900px;
     background: darkorange;
     margin-top: 30px;
-    margin-left: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .widgets {
@@ -99,97 +123,50 @@
     height: 150px;
 }
 
-.size {
-    width: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.big {
-    width: 130px;
-    height: 200px;
-    background: cornflowerblue;
-}
-
 .bigger {
-    width: 130px;
     height: 250px;
-    background: cornflowerblue;
 }
 
-.huge {
-    width: 130px;
-    height: 300px;
-    background: cornflowerblue;
-}
 
 .contact {
     background: greenyellow;
     width: 470px;
-    height: 300px;
 }
 
 /*=============================================*/
 
 
 .two {
-    width: 500px;
     height: 500px;
     background: hotpink;
     margin-top: 30px;
-    margin-left: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .block {
-    width: 450px;
     height: 460px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
 }
 
 .headertwo {
     background: indigo;
-    width: 440px;
     height: 70px;
 }
 
 .nav {
     background: crimson;
-    width: 440px;
     height: 45px;
 }
 
-.tools {
-    width: 440px;
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .maintwo {
-    height: 300px;
     flex-grow: 2;
     background: darkslategray;
 }
 
 .aside {
     flex-grow: 1;
-    height: 300px;
     background: seashell;
 }
 
 .footerTwo {
     background: sandybrown;
-    width: 440px;
     height: 45px;
 }
