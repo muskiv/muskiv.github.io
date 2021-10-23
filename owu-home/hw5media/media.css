@@ -198,7 +198,6 @@
     }
 }
 
-
 @media (max-width: 767px) {
     .lower__main {
         flex-direction: column;
@@ -214,14 +213,14 @@
 }
 
 @media (max-width: 767px) {
-    .title {
+    .block__title {
         padding: 0;
         margin: 0;
     }
 }
 
 @media (max-width: 767px) {
-    .title-text {
+    .block__title-text {
         width: 70%;
     }
 }
@@ -229,5 +228,13 @@
 @media (max-width: 767px) {
     .lower button {
         width: 30%;
+    }
+}
+
+/*=========================================*/
+
+@media (max-width: 767px) {
+    .footer {
+        height: 120px;
     }
 }
