@@ -1,4 +1,5 @@
 @media screen and (max-width: 414px) {
+
     .header__top {
         padding: 40px 14px;
     }
@@ -61,7 +62,7 @@
     .header__title p {
         font-size: 15px;
         line-height: 20px;
-        margin: 5px;
+        margin: 0;
     }
 
     .header__title p::before,
@@ -76,9 +77,15 @@
 
     /*======================================*/
 
-    .about__place {
+    .about{
+        height: 100%;
+    }
+
+    .about__place{
         flex-direction: column;
         align-items: center;
         row-gap: 14px;
+        margin-top: -85px;
+        padding-bottom: 150px;
     }
 }
