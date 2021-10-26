@@ -61,7 +61,7 @@
     .header__title p {
         font-size: 15px;
         line-height: 20px;
-        margin: 0;
+        margin: 5px;
     }
 
     .header__title p::before,
