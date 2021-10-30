@@ -1,3 +1,10 @@
+@media (max-width: 1400px) {
+    .btn-colors {
+        width: 309px;
+        height: 136px;
+    }
+}
+
 @media (max-width: 1200px) {
     .first-screen-right img {
         display: none;
@@ -23,6 +30,10 @@
 
     .unsere-screen-right img {
         display: none;
+    }
+
+    .first-screen-left-second img {
+        margin-right: 0;
     }
 }
 
@@ -114,6 +125,7 @@
         left: 0;
     }
 
+
     .img_a {
         margin-right: 150px;
         max-width: none;
@@ -141,5 +153,77 @@
         font-weight: normal;
         font-size: 17px;
         line-height: 32px;
+    }
+
+    .unsere-screen {
+        height: 1010px;
+    }
+
+    .ihre-screen {
+        position: relative;
+    }
+
+    .btn-colors {
+        width: 359px;
+        height: 136px;
+    }
+
+    .ihre-screen-block {
+        margin: 0 auto;
+        padding: 0 8px;
+    }
+
+    .hauptmerkmale-screen-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-group-item span {
+        padding-right: 0;
+    }
+
+    .carousel-box {
+        width: 90%;
+    }
+
+    .bilder-screen-buttons button {
+        width: 359px;
+        height: 64px;
+    }
+
+    .kontakt-screen-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kontakt-screen-title {
+        width: 100%;
+        font-size: 26px;
+        padding-left: 20px;
+    }
+
+    .kontakt-screen-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .kontakt-screen-buttons {
+        padding-left: 25px;
+    }
+
+    .kontakt-screen-img {
+        margin-bottom: 70px;
+    }
+
+    .footer-screen-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer-screen-box{
+        display: block !important;
+        
+        margin-top: 20px;
     }
 }

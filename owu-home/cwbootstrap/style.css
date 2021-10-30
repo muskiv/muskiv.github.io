@@ -1,3 +1,20 @@
+body {
+    background: #FBFBFC;
+}
+
+.back-g {
+    background: #FBFBFC !important;
+    height: 100%;
+}
+
+.back-g-f {
+    border-top: 2px solid #EEF0F4;
+}
+
+.container {
+    background: #fff;
+}
+
 .none {
     display: none;
 }
@@ -7,16 +24,19 @@
 }
 
 .header {
-    background: rgba(255, 255, 255, 0.3);
     mix-blend-mode: normal;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
+}
+
+.head-con {
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-expand-xl .navbar-nav .nav-link {
     border: 2px solid transparent;
+
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -88,6 +108,7 @@
     line-height: 32px;
     color: #45494F;
     padding-right: 50px;
+
 }
 
 .first-screen-left-second img {
@@ -108,6 +129,11 @@
     padding-right: 225px;
 }
 
+
+.first-screen-left-second {
+    overflow: hidden;
+}
+
 .modernste-screen-text {
     font-weight: normal;
     font-size: 17px;
@@ -125,6 +151,8 @@
     position: relative;
     top: 0;
     left: -85px;
+
+
 }
 
 .unsere-screen-title {
@@ -156,6 +184,187 @@
     bottom: 175px;
 }
 
-.unsere-screen{
+.unsere-screen {
     height: 570px;
+}
+
+.ihre-screen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inhre-screen-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 4.42px;
+    color: #020303;
+    margin-top: 67px;
+    margin-bottom: 42px;
+}
+
+
+.btn-colors {
+    background: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    width: 394px;
+    height: 136px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #45494F;
+}
+
+.ihre-screen-buttons img {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.ihre-screen-block:last-child {
+    justify-content: space-between !important;
+}
+
+.dord {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.list-group-numbered>li::before {
+    content: "" !important;
+}
+
+.list-group-item {
+    border: none;
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: -0.4px;
+}
+
+.hauptmerkmale-screen-block {
+    padding-bottom: 50px;
+}
+
+.list-group-item span {
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.carousel-box {
+    width: 40%;
+}
+
+.bilder-screen-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 4.42px;
+    color: #020303;
+    margin-top: 67px;
+    margin-bottom: 42px;
+}
+
+.bilder-screen-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 2.42px;
+    color: #020303;
+    margin-top: 35px;
+}
+
+.bilder-screen-buttons {
+    margin-top: 50px;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.bilder-screen-buttons button {
+    width: 30%;
+}
+
+.kontakt-screen-box {
+    display: flex;
+}
+
+.kontakt-screen-title {
+    width: 33.33%;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: -0.4px;
+    color: #1652AC;
+}
+
+.kontakt-screen-buttons {
+    margin: 20px 0;
+}
+
+.kontakt-screen-info {
+    width: 33.33%;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #464C53;
+    margin: 50px 0;
+}
+
+.kontakt-screen-buttons button {
+    width: 306px;
+    height: 69px;
+}
+
+.btn span {
+    position: relative;
+    bottom: 95px;
+    right: 30px;
+    font-size: 150px;
+}
+
+
+.button-text {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    font-weight: 500;
+    font-size: 18px !important;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer-screen-item {
+    width: 25%;
+}
+
+.footer-screen-box {
+    margin: 50px 0;
+}
+
+.footer-screen-title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #A3ADBA;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-screen-text {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #9EABBB;
+    text-align: center;
+}
+
+.footer-screen-text-last{
+    margin-top: 52px;
 }
