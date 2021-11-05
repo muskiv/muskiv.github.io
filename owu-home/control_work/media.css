@@ -668,6 +668,51 @@
         padding-top: 24px;
         margin: 0;
     }
+
+    /*====================================================*/
+
+    .wrapper {
+        overflow-x: hidden;
+    }
+
+    .filter {
+        position: static;
+    }
+
+    .news__box_text_four {
+        padding: 0;
+    }
+
+    .top_sellers {
+        height: 175px;
+    }
+
+    .news_block {
+        margin-top: 30px;
+    }
+
+    .news__box_item {
+        margin-bottom: 30px;
+    }
+
+    .top_sellers_block_img_two {
+        margin-right: 0;
+    }
+
+    .carousel {
+        height: 370px;
+    }
+
+
+    .more_btn,
+    .news,
+    .news__box,
+    .products,
+    .filter,
+    .big_line,
+    .line_main {
+        top: 0;
+    }
 }
 
 /*====================================================*/
@@ -1109,7 +1154,7 @@
         display: flex;
         position: absolute;
         justify-content: space-around;
-        top: 860px;
+        top: 753px;
         z-index: 1;
         background: #fff;
         margin: 0;
@@ -1126,6 +1171,45 @@
         position: absolute;
         top: 17px;
         left: 266px;
+    }
+
+    /*====================================================*/
+
+    .wrapper {
+        overflow-x: hidden;
+    }
+
+    .carousel__block_mini,
+    .filter {
+        position: static;
+    }
+
+    .products,
+    .more_btn,
+    .news,
+    .news__box,
+    .line_hide,
+    .line_main,
+    .top_sellers {
+        top: 0;
+    }
+
+    .news__box_text_four {
+        padding: 0;
+    }
+
+    .carousel__block_mini_price_two {
+        width: 225px;
+    }
+
+    .top_sellers {
+        margin-top: 50px;
+    }
+
+    .products,
+    .news_block,
+    .more_btn_button {
+        margin-top: 0;
     }
 }
 
@@ -1145,6 +1229,7 @@
     .more {
         margin-left: 135px;
     }
+
 }
 
 /*====================================================*/
@@ -1219,7 +1304,7 @@
         display: flex;
         position: absolute;
         justify-content: space-around;
-        top: 625px;
+        top: 610px;
         z-index: 1;
         background: #fff;
         margin: 0;
@@ -1229,7 +1314,7 @@
 
     .p_s_numb_three {
         position: absolute;
-        top: 8px;    
+        top: 8px;
         left: 125px;
     }
 
@@ -1237,5 +1322,49 @@
         position: absolute;
         top: 8px;
         left: 205px;
+    }
+
+    /*====================================================*/
+
+    .wrapper {
+        overflow-x: hidden;
+    }
+
+    .carousel__block_mini {
+        position: static;
+    }
+
+    .products,
+    .more_btn,
+    .news,
+    .news__box,
+    .line_hide,
+    .line_main {
+        top: 0;
+    }
+
+    .news__box_text_four {
+        padding: 0;
+    }
+
+    .p_s {
+        right: 0;
+    }
+
+    .top_sellers {
+        top: 20px;
+    }
+
+    .filter {
+        width: 400px;
+    }
+
+    .top_sellers{
+        margin-top: 30px;
+    }
+
+    .top_sellers_block_img{
+        margin-right: 0;
+        padding-left: 0;
     }
 }
