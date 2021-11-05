@@ -2,21 +2,23 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #E5E5E5;
+    background: #fff;
 }
+
+.wrapper {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*====================================================*/
+/*====================================================*/
 
 .nav-top {
     display: block;
     height: 36px;
     background: #0F2438;
     color: #fff;
-}
-
-.wrapper {
-    font-family: 'Roboto', sans-serif;
-    max-width: 1390px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .nav__box {
@@ -43,7 +45,7 @@ body {
 
 .city {
     position: relative;
-    bottom: 8px;
+    bottom: 4px;
     padding-right: 20px;
     background: transparent;
     color: #fff;
@@ -91,7 +93,8 @@ option {
     text-decoration: none;
 }
 
-/*==============================================================================*/
+/*====================================================*/
+/*====================================================*/
 
 .header {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -216,7 +219,8 @@ option {
     margin-left: 25px;
 }
 
-/*==============================================================================*/
+/*====================================================*/
+/*====================================================*/
 
 .header__bottom {
     margin-top: 35px;
@@ -332,6 +336,9 @@ option {
     line-height: 16px;
     color: #0F2438;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .enter img {
@@ -347,6 +354,9 @@ option {
     border-right: 1px solid #E1E5F8;
     text-align: center;
     padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .like img {
@@ -374,7 +384,8 @@ option {
     width: 75px;
 }
 
-/*==============================================================================*/
+/*====================================================*/
+/*====================================================*/
 
 .carousel {
     margin-top: 30px;
@@ -564,7 +575,8 @@ option {
     margin-top: -15px;
 }
 
-/*==============================================================================*/
+/*====================================================*/
+/*====================================================*/
 
 .top_sellers {
     display: flex;
@@ -632,7 +644,8 @@ option {
     margin-right: 2px;
 }
 
-.top_sellers_arrow {
+.top_sellers_arrow,
+.top_sellers_arrow_two {
     position: relative;
 }
 
@@ -648,10 +661,6 @@ option {
     left: -5%;
 }
 
-.top_sellers_arrow_two {
-    position: relative;
-}
-
 .top_sellers_arrow_two span::after {
     content: "";
     display: block;
@@ -664,8 +673,8 @@ option {
     right: -5%;
 }
 
-
-/*==============================================================================*/
+/*====================================================*/
+/*====================================================*/
 
 
 .filter {
@@ -722,7 +731,9 @@ option {
     background: #fff;
 }
 
-/*==============================================================================*/
+
+/*====================================================*/
+/*====================================================*/
 
 .products {
     display: flex;
@@ -852,6 +863,13 @@ option {
     margin-bottom: 22px;
 }
 
+.products_hide {
+    display: none;
+}
+
+/*====================================================*/
+/*====================================================*/
+
 .line_main {
     width: 100%;
     height: 1px;
@@ -866,6 +884,10 @@ option {
     background: #E1E5F8;
     margin-bottom: 40px;
 }
+
+
+/*====================================================*/
+/*====================================================*/
 
 .more_btn {
     display: flex;
@@ -882,8 +904,6 @@ option {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    display: flex;
-    align-items: center;
     color: #005BB9;
     display: flex;
     justify-content: center;
@@ -892,15 +912,17 @@ option {
     margin-bottom: 80px;
 }
 
-.products_hide {
-    display: none;
-}
+
+/*====================================================*/
+/*====================================================*/
+
 
 .line_hide {
     display: none;
 }
 
-/*==============================================================================*/
+/*====================================================*/
+/*====================================================*/
 
 .news_block {
     font-weight: 500;
@@ -910,7 +932,8 @@ option {
     margin-bottom: 14px;
 }
 
-/*==============================================================================*/
+/*====================================================*/
+/*====================================================*/
 
 
 .big_line {
@@ -918,7 +941,8 @@ option {
     background: #F5F5F5;
 }
 
-/*==============================================================================*/
+/*====================================================*/
+/*====================================================*/
 
 
 .news__box {
@@ -992,4 +1016,205 @@ option {
 
 .news__box_link_four {
     width: 278px;
+}
+
+/*====================================================*/
+/*====================================================*/
+
+.footer {
+    background: #0C1A2A;
+}
+
+/*====================================================*/
+/*====================================================*/
+
+.footer_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #868DAC;
+    background: transparent;
+    margin-top: 36px;
+    margin-bottom: 14px;
+}
+
+.footer_text_item {
+    margin-bottom: 14px;
+}
+
+.footer_text a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.footer_paiements {
+    margin-top: 45px;
+}
+
+.footer_paiements a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.footer_paiements_img {
+    background: transparent;
+}
+
+.footer_block_data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_block_data_body {
+    position: relative;
+    right: 9px;
+}
+
+.footer_text_info {
+    width: 300px;
+}
+
+.footer_block_data_body_m {
+    margin-right: 107px;
+}
+
+.footer_block_chat {
+    margin-top: 15px;
+}
+
+.footer_block_chat_item_text_online {
+    margin-bottom: 23px;
+}
+
+.footer_block_chat_item_three {
+    margin-bottom: 19px;
+}
+
+.footer_block_chat_item_text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #858CAB;
+}
+
+.footer_block_chat_item_text a {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+
+.footer_block_chat_url input {
+    border: 1px solid #203246;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: transparent;
+    height: 40px;
+    width: 293px;
+    padding-left: 17px;
+}
+
+.footer_block_chat_item_btn {
+    width: 177px;
+    height: 40px;
+    background: #005BB9;
+    border-radius: 0px 6px 6px 0px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    right: 9px;
+    top: 1px;
+    margin-bottom: 27px;
+}
+
+.footer_block_social {
+    display: flex;
+    justify-content: end;
+}
+
+.footer_block_social img {
+    margin-left: 50px;
+    margin-right: 5px;
+}
+
+/*====================================================*/
+/*====================================================*/
+
+.footer_finish {
+    background: #0C1A2A;
+}
+
+.footer_finisn_year {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #737E9B;
+    padding-top: 48px;
+    padding-bottom: 18px;
+}
+
+/*====================================================*/
+/*====================================================*/
+
+.p_s {
+    display: none;
+    width: 414px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.p_s_block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    width: 414px;
+}
+
+.p_s img {
+    padding-bottom: 6px;
+}
+
+.p_s_block_home,
+.p_s_block_like,
+.p_s_block_cart,
+.p_s_block_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.p_s_block_text {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #0F2438;
+}
+
+.p_s_numb_three {
+    position: absolute;
+    left: 160px;
+}
+
+.p_s_numb_two {
+    position: absolute;
+    left: 251px;
 }
