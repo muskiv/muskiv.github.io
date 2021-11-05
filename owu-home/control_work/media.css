@@ -1007,7 +1007,6 @@
 
     .news__box_image {
         position: static;
-        bottom: none;
     }
 
     .news__box_time {
@@ -1015,7 +1014,6 @@
         justify-content: center;
         align-items: center;
         position: static;
-        bottom: none;
         margin-bottom: 8px;
         width: 58px;
         height: 16px;
@@ -1025,7 +1023,6 @@
 
     .news__box_link {
         position: static;
-        bottom: none;
         margin-bottom: 8px;
         width: 265px;
         font-size: 14px;
@@ -1159,18 +1156,19 @@
         background: #fff;
         margin: 0;
         height: 80px;
+        width: 100%;
     }
 
     .p_s_numb_three {
         position: absolute;
         top: 17px;
-        left: 160px;
+        left: 39%;
     }
 
     .p_s_numb_two {
         position: absolute;
         top: 17px;
-        left: 266px;
+        left: 65%;
     }
 
     /*====================================================*/
