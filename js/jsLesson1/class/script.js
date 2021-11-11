@@ -74,6 +74,6 @@ console.log(v);
 /*
 let n = 3;
 let m = 4;
-let k = (3 ** 2) + (4 ** 2);
+let k = (n ** 2) + (m ** 2);
 console.log(k)
 */
