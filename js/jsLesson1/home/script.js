@@ -132,7 +132,7 @@ document.write(" "+d);
 let firstName = "Volodymyr";
 let middleName = "Myronovych";
 let lastName = "Myskiv";
-let person = [firstName, middleName, lastName];
+let person = "firstName, middleName, lastName";
 console.log(person);
 */
 
@@ -196,44 +196,3 @@ console.log(123 == '123');
     document.write(str * "2" + "<br/>");//40 - два значення переводяться в цифри
     document.write(str / 2 + "<br/>");//10 - str значення переводяться в цифри
 */
-
-
-
-/* ЗАВДАННЯ ERROR зробити щоб не видавало помилки досить легко... було би круто знати який повинен бути кінцевий результат. тоді завдання стає важчим...
-let a = 100;
-    let b = 500;
-    let c = "hello";
-    let d = "okten";
-    const x = 'constant value';
-    {
-        console.log(a);
-        x = 'new value';
-    }
-    let b = 'new value';
-
-    let result = 100 + y;
-
-    console(result);
-    */
-
-/*
-let a = 100;
-let b = 500;
-let c = "hello";
-let d = "okten";
-console.log(a);  // переніс за межі дужок, на мою думку, там це не потрібне...
-const x = 'constant value';
-    {
-        const x = 'new value';// 1) не зрозумів чому, але так не вибиває помилки....  в середині маcиву console.log(x); видасть new value, а за межами console.log(x); видасть constant value... 2) але по хорошому потрібно в 225 рядку замість константи написати let або var і перенести крапку з комою..."якщо не переносити крапку з комою помилки не виб'є"... 227 рядок без змін залишити, тобто  x = 'new value';... 3) в 225 рядку замість константи написати let або var і видалити дужки - {} ... 227 рядок без змін залишити, тобто  x = 'new value';...
-    }
-b = 'new value'; //  тут let було зайвим, або замінити значення b на інше...
-let result = 100 + a; // y - такого значення немає... тут або підставляти інші значення, або видалити + у
-console.log(result); // забули .log
-
-
-// А ТАК ВСЕ ПРАЦЮЄ БЕЗ ПОМИЛОК)
-
-*/
-
-
-
