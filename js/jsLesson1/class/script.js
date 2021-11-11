@@ -74,6 +74,6 @@ console.log(v);
 /*
 let n = 3;
 let m = 4;
-let k = (n ** 2 + m ** 2) / 5;
+let k = (n ** 2 + m ** 2) / 5; //або ** 0,5 замість / 5.
 console.log(k)
 */
