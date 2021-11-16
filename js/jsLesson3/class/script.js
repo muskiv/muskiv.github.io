@@ -45,8 +45,10 @@ for (let i = 1; i < x.length; i+=2) {
 let x = [2,17,13,6,22,31,45,66,100,-18];
 let i = 0;
 while (i < x.length) {
-    console.log(x[i])
-    i += 2;
+    if (x[i]%2 === 0){
+    console.log(x[i]);
+    };
+    i ++;
 }
 */
 
@@ -54,8 +56,10 @@ while (i < x.length) {
 
 /*
 let x = [2,17,13,6,22,31,45,66,100,-18];
-for (let i = 0; i < x.length; i+=2) {
+for (let i = 0; i < x.length; i++) {
+    if (x[i]%2 === 0) {
     console.log(x[i]);
+    }
 };
 */
 
@@ -65,7 +69,7 @@ for (let i = 0; i < x.length; i+=2) {
 let x = [2,17,13,6,22,31,45,66,100,-18];
 for (let i = 0; i < x.length; i++){
     if (x[i]%3 ===0){
-        x[i] = "okten";
+    x[i] = "okten";
     }
 }
 console.log(x);
@@ -125,10 +129,12 @@ for (let i = x.length - 1; i >= 0; i-=2) {
 
 /*
 let x = [2,17,13,6,22,31,45,66,100,-18];
-let i = x.length - 2;
+let i = x.length -1;
 while (i >= 0) {
-    console.log(x[i])
-    i -= 2;
+    if (x[i]%2 === 0){
+console.log(x[i]);
+    }
+    i --;
 }
 */
 
@@ -136,8 +142,10 @@ while (i >= 0) {
 
 /*
 let x = [2,17,13,6,22,31,45,66,100,-18];
-for (let i = x.length - 2; i >= 0; i-=2) {
+for (let i = x.length - 1; i >= 0; i--) {
+    if (x[i]%2 === 0){
     console.log(x[i]);
+    }
 };
 */
 
@@ -147,7 +155,7 @@ for (let i = x.length - 2; i >= 0; i-=2) {
 let x = [2,17,13,6,22,31,45,66,100,-18];
 for (let i = x.length; i > 0; i--){
     if (x[i]%3 ===0){
-        x[i] = "okten";
+    x[i] = "okten";
     }
 }
 console.log(x);
