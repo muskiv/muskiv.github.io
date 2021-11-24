@@ -64,3 +64,19 @@ replaceItemByIndex(array, index);
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
+
+/*
+let replaceNull = (arr)=> {
+    for (let i = 0, x = 0; i < arr.length; i++) {
+        if (arr[i] !== 0) {
+        [arr[x], arr[i]] = [arr[i], arr[x]];
+            x++;
+        } 
+    }
+    return arr;
+}
+
+console.log(replaceNull([1,0,6,0,3]));
+console.log(replaceNull([0,1,2,3,4]));
+console.log(replaceNull([0,0,1,0]));
+*/
