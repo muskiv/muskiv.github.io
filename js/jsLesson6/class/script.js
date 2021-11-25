@@ -8,17 +8,72 @@
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
 
+/*
+let n1 = 'Harry..Potter';
+let n2 = 'Ron---Whisley';
+let n3 = 'Hermione__Granger';
+let normName =(str , symbol)=>{
+    console.log(str.replaceAll(symbol, ' ').replace(/\s+/, ' '));
+};
+
+normName(n1,'.');
+normName(n2,'-');
+normName(n3,'_');
+*/
 
 // - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
+/*
+let generatorArray = (rando)=> {
+    let z = [];
+    for (let i= 0; i < rando; i++) {
+        z[i] = Math.round(Math.random()*100);
+    }
+    return z;
+}
+
+console.log(generatorArray(5));
+*/
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. Відсортувати його за допомоги sort
 
+/*
+let generatorArray = (rando)=> {
+    let z = [];
+    for (let i= 0; i < rando; i++) {
+        z[i] = Math.round(Math.random()*100);
+    }
+    return z.sort();
+}
+
+console.log(generatorArray(5));
+*/
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги filter, залишивши тільки парні числа
 
+/*
+let generatorArray = (rando)=> {
+    let z = [];
+    for (let i= 0; i < rando; i++) {
+        z[i] = Math.round(Math.random() *100);
+    }
+    console.log(z.filter(z=> z % 2 === 0));
+}
+
+console.log(generatorArray(5));
+*/
 
 // - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+
+let generatorArray = (rando)=> {
+    let z = [];
+    for (let i= 0; i < rando; i++) {
+        z[i] = Math.round(Math.random()*100);
+    }
+    return z;
+}
+
+console.log(generatorArray(5));
 
 
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
@@ -41,3 +96,5 @@
 
 // - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
 // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+
+
