@@ -3,15 +3,15 @@
 
 // завдання взагалі не зрозуміле, з помилками в словах...
 /*
-let elem = document.querySelector("#main_header");
-elem.classList.add('mon-year');
-console.log(elem);
+let a = document.querySelector("#main_header");
+a.classList.add('mon-year');
+console.log(a);
 */
 
 //     b) робить шириниу елементу ul 400px
 /*
-let x = document.getElementsByTagName('ul');
-for (const iterator of x) {
+let b = document.getElementsByTagName('ul');
+for (const iterator of b) {
     iterator.style.width = '400px';
     console.log(iterator);
 };
@@ -19,8 +19,8 @@ for (const iterator of x) {
 
 //     c) робить шириниу всіх елементів з класом linkList шириною 50%
 /*
-let x = document.getElementsByClassName('linkList');
-for (const iterator of x) {
+let c = document.getElementsByClassName('linkList');
+for (const iterator of c) {
     iterator.style.width = '50%';
     console.log(iterator);
 };
@@ -28,15 +28,14 @@ for (const iterator of x) {
 
 //     d) отримує текст який зберігається в елементі з класом listElement2
 /*
-let x = document.querySelector('.listElement2').innerText;
-console.log(x);
+let d = document.querySelector('.listElement2').innerText;
+console.log(d);
 */
 
 //     e) отримує всі елементи li та змінює ім колір фону на сірий
-
 /*
-let t = document.querySelectorAll('li');
-for (const iterator of t) {
+let e = document.querySelectorAll('li');
+for (const iterator of e) {
     iterator.style.background = 'gray';
 };
 */
@@ -49,6 +48,7 @@ for (const iterator of f) {
 };
 console.log(f);
 */
+
 //     g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
 /*
 let g = document.querySelectorAll('a');
