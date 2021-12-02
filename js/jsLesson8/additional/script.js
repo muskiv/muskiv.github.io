@@ -4,7 +4,7 @@ let array =[];
 let reCall = (elem) => {
     for(let elements of elem.children){
         reCall(elements);
-        if (elements.className != '') {
+        if (elements.className !== '') {
             var classList = elements.className.split(/\s+/);
             for (var i = 0; i < classList.length; i++) {
     	    	array.push(classList[i]);
