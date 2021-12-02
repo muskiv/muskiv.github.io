@@ -218,12 +218,11 @@
 //             div.appendChild(hourDuration);
 //             let list = document.createElement('div');
 //             for (const key in iterator.modules) {
-//                 let ul = document.createElement('ul');
 //                     let li = document.createElement('li');
 //                     li.innerText = iterator.modules[key]; 
 //                     list.appendChild(li)
 //                     div.appendChild(list);
-//             }
+//             };
 //             document.body.appendChild(div);
 //         };
 
