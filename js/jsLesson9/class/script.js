@@ -220,7 +220,7 @@
 //             for (const key in iterator.modules) {
 //                     let li = document.createElement('li');
 //                     li.innerText = iterator.modules[key]; 
-//                     list.appendChild(li)
+//                     list.appendChild(li);
 //                     div.appendChild(list);
 //             };
 //             document.body.appendChild(div);
