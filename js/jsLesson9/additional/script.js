@@ -381,8 +381,6 @@ let usersList = [
         }
     }
 ];
-
-
 // Створити під кожен елемент окремий блок. В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
 
 for (const iterator of usersList) {
@@ -400,34 +398,24 @@ for (const iterator of usersList) {
     let email = document.createElement('div');
     email.append(iterator.email);
     
-        let address = document.createElement('div');
-
-            let street = document.createElement('div');
-            street.append(iterator.address.street);
-            address.appendChild(street);
-
-            let suite = document.createElement('div');
-            suite.append(iterator.address.suite);
-            address.appendChild(suite);
-
-            let city = document.createElement('div');
-            city.append(iterator.address.city);
-            address.appendChild(city);
-
-            let zipcode = document.createElement('div');
-            zipcode.append(iterator.address.zipcode);
-            address.appendChild(zipcode);
-
-            let geo = document.createElement('div'); 
-            address.appendChild(geo);
-
-                let lat = document.createElement('div');
-                lat.append(iterator.address.geo.lat);
-                geo.appendChild(lat);
-
-                let lng = document.createElement('div');
-                lng.append(iterator.address.geo.lng);
-                geo.appendChild(lng);
+    let thisAdress = document.createElement('div');
+    for (const key in iterator.address) {
+        if (typeof iterator.address[key] === 'object') { 
+            let geo =document.createElement('div');
+            let lat = document.createElement('div');
+            lat.append(iterator.address.geo.lat);
+            geo.appendChild(lat);
+            let lng = document.createElement('div');
+            lng.append(iterator.address.geo.lng);
+            geo.appendChild(lng);
+            thisAdress.appendChild(geo);
+        }
+        else{
+            let address = document.createElement('div');
+            address.innerText = iterator.address[key];
+            thisAdress.appendChild(address);
+        }
+    }
 
     let phone = document.createElement('div');
     phone.append(iterator.phone);
@@ -435,29 +423,99 @@ for (const iterator of usersList) {
     let website = document.createElement('div');
     website.append(iterator.website);
 
-    let company = document.createElement('div');
+    let company = document.createElement('div')
+    for (const key in iterator.company) {
+        let meCompany = document.createElement('div');
+        meCompany.innerText = iterator.company[key];
+        company.appendChild(meCompany);
+    };
 
-        let  companyName =  document.createElement('div');
-        companyName.append(iterator.company.name);
-        company.appendChild(companyName);
-
-        let  catchPhrase =  document.createElement('div');
-        catchPhrase.append(iterator.company.catchPhrase);
-        company.appendChild(catchPhrase);
-
-        let  bs =  document.createElement('div');
-        bs.append(iterator.company.bs);
-        company.appendChild(bs);
-
-
-    firstBlock.appendChild(id);
-    firstBlock.appendChild(name);
-    firstBlock.appendChild(username);
-    firstBlock.appendChild(email);
-    firstBlock.appendChild(address);
-    firstBlock.appendChild(phone);
-    firstBlock.appendChild(website);
-    firstBlock.appendChild(company);
-
+firstBlock.appendChild(id);
+firstBlock.appendChild(name);
+firstBlock.appendChild(username);
+firstBlock.appendChild(email);
+firstBlock.appendChild(thisAdress);
+firstBlock.appendChild(phone);
+firstBlock.appendChild(website);
+firstBlock.appendChild(company);
 document.body.appendChild(firstBlock);
 };
+
+// ще один варіан... до данного завдання теж робочий.....
+
+// for (const iterator of usersList) {
+//     let firstBlock = document.createElement('div');
+
+//     let id = document.createElement('div');
+//     id.append(iterator.id);
+
+//     let name = document.createElement('div');
+//     name.append(iterator.name);
+
+//     let username = document.createElement('div');
+//     username.append(iterator.username);
+
+//     let email = document.createElement('div');
+//     email.append(iterator.email);
+    
+//         let address = document.createElement('div');
+
+//             let street = document.createElement('div');
+//             street.append(iterator.address.street);
+//             address.appendChild(street);
+
+//             let suite = document.createElement('div');
+//             suite.append(iterator.address.suite);
+//             address.appendChild(suite);
+
+//             let city = document.createElement('div');
+//             city.append(iterator.address.city);
+//             address.appendChild(city);
+
+//             let zipcode = document.createElement('div');
+//             zipcode.append(iterator.address.zipcode);
+//             address.appendChild(zipcode);
+
+//             let geo = document.createElement('div'); 
+//             address.appendChild(geo);
+
+//                 let lat = document.createElement('div');
+//                 lat.append(iterator.address.geo.lat);
+//                 geo.appendChild(lat);
+
+//                 let lng = document.createElement('div');
+//                 lng.append(iterator.address.geo.lng);
+//                 geo.appendChild(lng);
+
+//     let phone = document.createElement('div');
+//     phone.append(iterator.phone);
+
+//     let website = document.createElement('div');
+//     website.append(iterator.website);
+
+//     let company = document.createElement('div');
+
+//         let  companyName =  document.createElement('div');
+//         companyName.append(iterator.company.name);
+//         company.appendChild(companyName);
+
+//         let  catchPhrase =  document.createElement('div');
+//         catchPhrase.append(iterator.company.catchPhrase);
+//         company.appendChild(catchPhrase);
+
+//         let  bs =  document.createElement('div');
+//         bs.append(iterator.company.bs);
+//         company.appendChild(bs);
+
+
+//     firstBlock.appendChild(id);
+//     firstBlock.appendChild(name);
+//     firstBlock.appendChild(username);
+//     firstBlock.appendChild(email);
+//     firstBlock.appendChild(address);
+//     firstBlock.appendChild(phone);
+//     firstBlock.appendChild(website);
+//     firstBlock.appendChild(company);
+
+// document.body.appendChild(firstBlock);
+// };
