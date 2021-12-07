@@ -1,28 +1,46 @@
-// Skip to content
-// GrayHead
-// /
-// js_demos
-// Public
-// Code
-// Issues
-// Pull requests
-// Actions
-// Projects
-// Wiki
-// More
-// js_demos/js/preview/lesson10/lesson10_tasks/additional..txt
-// @GrayHead
-// GrayHead fix lesson 10
-//  History
-//  1 contributor
-// 40 lines (32 sloc)  4.54 KB
 // - Описати скріпт, котрий, якщо доєднати до будь-якої сторінки дозволить зробити наступне:
 // При лівому кліку миші вивести в консоль інформацію про блок або елемент на який відбувся клік.
 // Інформація яку потрібно вивести: Назва тегу, список класів, список ід, розміри в форматі висота*ширина
 
+// let div = document.createElement('div');
+// div.classList = ('first');
+// div.setAttribute('id', 1);
+// div.innerText = ('nhvfemkcdw, lx nhjbgomkf,lcd');
+// div.style.width ='200px';
+// div.style.height ='20px';
+// document.body.appendChild(div);
+// document.onclick = function (e) {
+//     console.log('tag', e.target.tagName, ',', 'class', e.target.className, ',', 'id', e.target.id, ',', 'висота', e.target.style.width, ',', 'ширина', e.target.style.height);
+    
+// };
+
 // - Описати скріпт, котрий, якщо доєднати до будь-якої сторінки дозволить зробити наступне:
 // При лівому кліку миші  зробить popup (спливаючий блок) в якому буде вся інформація про блок.
 // Інформація яку потрібно вивести в popup: Назва тегу, список класів, список ід, розміри в форматі висота*ширина
+
+// let div = document.createElement('div');
+// div.classList = ('first');
+// div.setAttribute('id', 1);
+// div.innerText = ('nhvfemkcdw, lx nhjbgomkf,lcd');
+// div.style.width ='200px';
+// div.style.height ='20px';
+// document.body.appendChild(div);
+
+// let popups = document.createElement('div');
+// popups.style.width = '400px';
+// popups.style.height = '150px';
+// popups.style.background = 'red'; 
+// popups.style.position = 'absolute';
+// popups.style.top = '200px';
+// popups.style.left = '200px';
+// popups.style.visibility = 'hidden';
+// document.body.appendChild(popups);
+// document.onclick = function (e) {
+//     popups.style.visibility = 'visible';
+//     popups.append('tag ', e.target.tagName + ', ', 'class ', e.target.className + ', ', 'id ', e.target.id + ', ', 'висота ', e.target.style.width + ', ', 'ширина ', e.target.style.height + ' ');
+//     document.body.style.background = 'gray';
+// };
+
 
 // -- взять массив пользователей
 // let usersWithAddress = [
@@ -38,6 +56,25 @@
 //                 {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
 //                 {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
 //             ];
+
+//             let filterFalse = document.createElement('input');
+//             filterFalse.type = 'checkbox';
+//             filterFalse.classList = 'filterFalse';
+//             document.body.appendChild(filterFalse);
+
+//             let filterAge = document.createElement('input');
+//             filterAge.type = 'checkbox';
+//             filterAge.classList = 'filterAge';
+//             document.body.appendChild(filterAge);
+
+//             let filterKiev = document.createElement('input');
+//             filterKiev.type = 'checkbox';
+//             filterKiev.classList = 'filterKiev';
+//             document.body.appendChild(filterKiev);
+            
+
+
+
 // - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива. Фильтры могут работать как вместе так и по отдельности.
 // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
 // 2й - оставляет старше 29 лет включительно
@@ -55,18 +92,3 @@
 
 //  Завдання важке для розуміння, але дуже легке в реалізації. Тут треба буде погуглити
 //  *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
-
-// © 2021 GitHub, Inc.
-// Terms
-// Privacy
-// Security
-// Status
-// Docs
-// Contact GitHub
-// Pricing
-// API
-// Training
-// Blog
-// About
-// Loading complete Octotree
-//  Login with GitHub
