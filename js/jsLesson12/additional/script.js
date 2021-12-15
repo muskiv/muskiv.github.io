@@ -8,8 +8,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then((json) => {
         let popups = document.createElement('div');
-        popups.style.width = '150px';
-        popups.style.height = '420px';
+        popups.style.width = '350px';
+        popups.style.height = '1220px';
         popups.style.background = 'red';
         popups.style.position = 'absolute';
         popups.style.left = '200px';
@@ -22,7 +22,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         popups2.style.background = 'blue';
         popups2.style.color = 'white';
         popups2.style.position = 'absolute';
-        popups2.style.left = '350px';
+        popups2.style.left = '550px';
         popups2.style.visibility = 'hidden';
         document.body.appendChild(popups2);
 
@@ -37,12 +37,13 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 fetch('https://jsonplaceholder.typicode.com/posts')
                     .then((response) => response.json())
                     .then((json) => {
+                        btn.disabled = true;
                         for (const j of json) {
                             let btn2 = document.createElement('button');
                             btn2.innerText = 'post';
                             if (iterator.id === j.userId) {
                                 let x = document.createElement('div');
-                                x.innerText = `Пости юзера id ${j.userId}`;
+                                x.innerText = Object.values(j);
                                 popups.append(x);
                                 popups.append(btn2);
                             };
@@ -51,7 +52,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                             document.body.style.background = 'gray';
 
                             btn2.onclick = function () {
-                                popups2.innerText = Object.values(j);
+                                popups2.innerText = `${j.body}`;
                                 popups2.style.visibility = 'visible';
                             };
                         };
