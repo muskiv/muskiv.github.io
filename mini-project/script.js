@@ -9,7 +9,7 @@
 fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then((json) => {
-        let favorites = [];
+        let user = [];
         for (const iterator of json) {
             let a = document.createElement('a');
             a.href = 'user-details.html';
@@ -26,8 +26,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
             id.style.marginTop = '2%';
             
             a.onclick = function () {
-                favorites.push(Object.values(iterator));
-                localStorage.setItem('favorites', JSON.stringify(favorites));
+                user.push(...Object.values(iterator));
+                localStorage.setItem('user', JSON.stringify(user));
             }
 
             id.append(a);
