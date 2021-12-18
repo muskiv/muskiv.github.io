@@ -370,7 +370,6 @@ wakeUp(true, (error, ok) => {
                                                                                 sleep(true, (error, ok) => {
                                                                                     if (!error) {
                                                                                         console.log(ok);
-                                                                                        sleep
                                                                                     };
                                                                                 });
                                                                             };
