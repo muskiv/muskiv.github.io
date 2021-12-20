@@ -50,6 +50,7 @@ btn.onclick = function () {
                 let divComments = document.createElement('div');
                 divComments.classList.add('divComments');
                 divComments.style.width = '23%';
+                divComments.style.height = '200px';
                 divComments.style.marginTop = '20px';
                 divComments.style.marginLeft = '5px';
                 divComments.style.marginRight = '5px';

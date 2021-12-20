@@ -1,7 +1,7 @@
 let container = document.createElement('div');
 container.classList.add('container');
 container.style.width = '100%';
-container.style.height = '100vh';
+container.style.height = '55vh';
 container.style.display = 'flex';
 container.style.flexDirection = 'column';
 container.style.alignItems = 'center';
@@ -25,7 +25,8 @@ btnBlock.style.width = '100%';
 
 let btn = document.createElement('button');
 btn.classList.add('btn');
-btn.style.top = '90%';
+btn.style.width = '90%';
+btn.style.top = '50%';
 btn.style.position = 'absolute';
 btn.innerText = 'post of current user';
 
