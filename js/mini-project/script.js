@@ -34,7 +34,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             id.style.marginBottom = '10px';
             id.style.marginLeft = '5px';
             id.style.marginRight = '5px';
-            id.style.background = '#c47ff5';
+            id.style.background = '#9df777';
 
             a.onclick = function () {
                 user.push(...Object.values(iterator));
