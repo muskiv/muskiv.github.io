@@ -1,20 +1,41 @@
 
-.main {
+.wrap {
+    display: flex;
+    background: cornflowerblue;
+}
+
+.main{
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+    background: crimson;
+    align-items: center;
+    width: 500px;
+}
+
+.users{
     display: flex;
 }
 
-.userDetails {
-    margin-left: 50px;
+.usersBody{
     width: 500px;
-    display: flex;
+    margin-bottom: 30px;
 }
+
 
 
 .btnPost{
-    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
 }
 
 .btn{
-    color: red;
     margin-left: 30px;
+    height: 20px;
+}
+
+.Posts{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: darkmagenta;
 }

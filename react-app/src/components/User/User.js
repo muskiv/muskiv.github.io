@@ -1,23 +1,14 @@
+import React from 'react';
 
-// const User = ({user: {id, name, username, email}, getUserId}) => {
-//     return (
-//         <div>
-//             {id} {name} {username} {email}
-//             <button onClick={()=>getUserId(id)}>getId</button>
-//         </div>
-//     );
-// };
+const User = ({user, getUse}) => {
+const {id, name, username, email} = user;
 
-// export default User;
-
-
-const User = ({user:{id, name, username, email}, getUserId}) => {
-  return (
-    <div>
-      {id} {name} {username} {email}
-      <button className="btn" onClick={()=>getUserId(id)}>User Details</button>
-    </div>
-  )
+return (
+  <div className='users'>
+    <div className='usersBody'>{id} {name} {username} {email}</div>
+    <button className='btn' onClick={()=>{getUse(user)}}>User Details</button>
+  </div>
+)
 }
 
 export default User
