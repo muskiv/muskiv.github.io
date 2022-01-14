@@ -1,1 +1,20 @@
 
+.main {
+    display: flex;
+}
+
+.userDetails {
+    margin-left: 50px;
+    width: 500px;
+    display: flex;
+}
+
+
+.btnPost{
+    margin-top: 150px;
+}
+
+.btn{
+    color: red;
+    margin-left: 30px;
+}
