@@ -1,41 +1,38 @@
-
 .wrap {
-    display: flex;
-    background: cornflowerblue;
+  display: flex;
+  background: cornflowerblue;
 }
 
 .main{
-    display: flex;
-    margin-left: 100px;
-    justify-content: center;
-    background: crimson;
-    align-items: center;
-    width: 500px;
+  display: flex;
+  margin-left: 100px;
+  justify-content: center;
+  background: crimson;
+  align-items: center;
+  width: 500px;
 }
 
 .users{
-    display: flex;
+  display: flex;
 }
 
 .usersBody{
-    width: 500px;
-    margin-bottom: 30px;
-}
-
-
-
-.btnPost{
-    text-align: center;
-    justify-content: center;
+  width: 500px;
+  margin-bottom: 30px;
 }
 
 .btn{
-    margin-left: 30px;
-    height: 20px;
+  margin-left: 30px;
+  height: 20px;
 }
 
 .Posts{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    background: darkmagenta;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background: darkmagenta;
+}
+
+.btnPost{
+  text-align: center;
+  justify-content: center;
 }

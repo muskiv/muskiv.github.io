@@ -6,28 +6,29 @@ import UserDetails from './components/UserDetails/UserDetails';
 import Posts from './components/Posts/Posts';
 
 function App() {
+  
   const [user, setUser] = useState(null);
   const [postId, setPostId] = useState(null);
 
   const getUse = (user) => {
-        setUser(user)
-        setPostId(null)
-    }
+    setUser(user)
+    setPostId(null)
+  }
 
   const getPostId = (id) => {
-        setPostId(id)
-    }
+    setPostId(id)
+  }
 
   return (
-      <div>
-        <div className='wrap'>
-          <Users getUse={getUse}/>
-          {user && <UserDetails user={user} getPostId={getPostId}/>}
-        </div>
-        <div>
-        {postId && <Posts postId={postId}/>}
-        </div>
+    <div>
+      <div className='wrap'>
+        <Users getUse={getUse}/>
+        {user && <UserDetails user={user} getPostId={getPostId}/>}
       </div>
+      <div>
+        {postId && <Posts postId={postId}/>}
+      </div>
+    </div>
   )
 }
 
