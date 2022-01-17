@@ -1,35 +1,45 @@
-import React, {useState} from 'react';
+import React, { useEffect, useState } from 'react'
+import Form from './components/Form/Form'
+import Users from './components/Users/Users'
+import { userService } from './services/user.services'
 
-import './App.css';
-import Users from "./components/Users/Users";
-import UserDetails from './components/UserDetails/UserDetails';
-import Posts from './components/Posts/Posts';
+const App = () => {
 
-function App() {
-  
-  const [user, setUser] = useState(null);
-  const [postId, setPostId] = useState(null);
+  const [users, setUsers] = useState([]);
+  const [filteredUsers, setFilteredUsers] = useState([]);
 
-  const getUse = (user) => {
-    setUser(user)
-    setPostId(null)
-  }
+  useEffect(() => {
+    userService.getAll()
+    .then(value => {
+      setUsers([...value])
+      setFilteredUsers([...value])
+    })
+  }, [])
 
-  const getPostId = (id) => {
-    setPostId(id)
+  const getFilter = (data) => {
+
+      let filterArr = [...users]
+
+      if (data.name){
+        filterArr = filterArr.filter(user => user.name.toLowerCase().includes(data.name.toLowerCase()))
+      }
+
+      if (data.username){
+        filterArr = filterArr.filter(user => user.username.toLowerCase().includes(data.username.toLowerCase()))
+      }
+
+      if (data.email){
+        filterArr = filterArr.filter(user => user.email.toLowerCase().includes(data.email.toLowerCase()))
+      }
+      setFilteredUsers(filterArr)
   }
 
   return (
     <div>
-      <div className='wrap'>
-        <Users getUse={getUse}/>
-        {user && <UserDetails user={user} getPostId={getPostId}/>}
-      </div>
-      <div>
-        {postId && <Posts postId={postId}/>}
-      </div>
+      <Form getFilter={getFilter}/>
+      <Users users={filteredUsers}/>
     </div>
   )
 }
 
-export default App;
+export default App

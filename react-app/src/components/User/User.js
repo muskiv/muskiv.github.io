@@ -1,13 +1,12 @@
 import React from 'react';
 
-const User = ({user, getUse}) => {
+const User = ({user}) => {
 
   const {id, name, username, email} = user;
 
   return (
     <div className='users'>
-      <div className='usersBody'>{id} {name} {username} {email}</div>
-      <button className='btn' onClick={()=>{getUse(user)}}>User Details</button>
+      {id} {name} {username} {email}
     </div>
   )
 }
