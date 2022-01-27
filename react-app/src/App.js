@@ -6,6 +6,8 @@ import Layout from './pages/Layout';
 import Users from './pages/Users';
 import Posts from './pages/Posts';
 import Comments from './pages/Comments';
+import UserDetails from './pages/UserDetails';
+import PostsOfUsers from './pages/PostsOfUsers';
 
 const App = () => {
   return(
@@ -20,11 +22,13 @@ const App = () => {
     <Routes>
       <Route path={'/'} element={<Home/>}/>
       <Route path={'/layout'} element={<Layout/>}>
-        <Route path={'/layout/users'} element={<Users/>}/>
+          <Route path={'/layout/users'} element={<Users/>}>
+            <Route path={'/layout/users/:id'} element={<UserDetails/>}/>
+            <Route path={'/layout/users/:id/posts'} element={<PostsOfUsers/>}/>
+          </Route>
         <Route path={'/layout/posts'} element={<Posts/>}/>
         <Route path={'/layout/comments'} element={<Comments/>}/>
       </Route>
-
     </Routes>
   </div>
   );

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
+
 import User from '../components/User';
 
 const Users = () => {
@@ -11,9 +13,13 @@ const Users = () => {
   })
 }, [])
 
-  return <div>
+  return (
+  <div>
     {users.map(value => <User key={value.id} item={value}/>)}
-  </div>;
+
+    <Outlet/>
+  </div>
+  )
 };
 
 export default Users;
