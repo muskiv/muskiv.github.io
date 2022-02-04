@@ -1,55 +1,37 @@
 import React, { useReducer } from 'react';
+import {  Cats, Dogs, Form } from './components';
 
-const reducer = (state, action) =>{
-    switch (action.type) {
-
-      case 'inc':
-        return {...state, count1: state.count1 + 1}
-      case 'inc2':
-        return {...state, count2: state.count2 + 1}
-      case 'inc3':
-        return {...state, count3: state.count3 + 1}
-
-      case 'dec':
-        return {...state, count1: state.count1 - 1}
-      case 'dec2':
-        return {...state, count2: state.count2 - 1}
-      case 'dec3':
-        return {...state, count3: state.count3 - 1}
-
-      case 'reset':
-        return {...state, count1: 0}
-      case 'reset2':
-        return {...state, count2: 0}
-      case 'reset3':
-        return {...state, count3: 0}
-
-        default:
-          throw new Error('MyError')
-      }
+const reducer = (state, action) => {
+  switch(action.type){
+    case 'ADD_CAT':
+      return {...state, cats:[...state.cats, {id:new Date().getTime(), name:action.payload.cat}]}
+    case 'ADD_DOG':
+      return {...state, dogs:[...state.dogs, {id:new Date().getTime(), name:action.payload.dog}]}
+    case 'DEL_CAT':
+      return {...state, cats: state.cats.filter(cat=>cat.id!==action.payload.id)}
+    case 'DEL_DOG':
+      return {...state, dogs: state.dogs.filter(dog=>dog.id!==action.payload.id)}
+      default:
+        return state
+  }
 }
 
-function App() {
-  const [state, dispatch] = useReducer(reducer, {count1: 0, count2: 0, count3: 0})
-  
+const App = () => {
+const [{cats, dogs}, dispatch] = useReducer(reducer, {cats:[], dogs:[]})
+
   return (
-    <div>
-      <div>{state.count1}</div>
-      <button onClick={()=> dispatch({type:'inc'})}>INC</button>
-      <button onClick={()=> dispatch({type:'dec'})}>DEC</button>
-      <button onClick={()=> dispatch({type:'reset'})}>RESET</button>
-
-      <div>{state.count2}</div>
-      <button onClick={()=> dispatch({type:'inc2'})}>INC</button>
-      <button onClick={()=> dispatch({type:'dec2'})}>DEC</button>
-      <button onClick={()=> dispatch({type:'reset2'})}>RESET</button>
-
-      <div>{state.count3}</div>
-      <button onClick={()=> dispatch({type:'inc3'})}>INC</button>
-      <button onClick={()=> dispatch({type:'dec3'})}>DEC</button>
-      <button onClick={()=> dispatch({type:'reset3'})}>RESET</button>
+  <div>
+    <Form dispatch={dispatch}/>
+    <div style={{display:'flex', justifyContent:'space-between'}}>
+      <Cats cats={cats} dispatch={dispatch}/>
+      <Dogs dogs={dogs} dispatch={dispatch}/>
     </div>
+
+  </div>
   )
-}
+};
 
 export default App;
+
+
+
