@@ -1,0 +1,7 @@
+
+NAME: Slava; 
+AGE: 21; 
+CITY: Kiev
+NAME: Tania; 
+AGE: 23; 
+CITY: Kiev
