@@ -1,7 +1,0 @@
-
-NAME: Andrii; 
-AGE: 22; 
-CITY: Lviv
-NAME: Volodymyr; 
-AGE: 26; 
-CITY: Lviv
