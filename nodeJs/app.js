@@ -112,3 +112,42 @@ fs.mkdir(pathMainDir, {recursive: true}, (err) => {
       throw err;
     }});
 });
+
+
+function readerFile(params) {
+  fs.readdir(path.join(__dirname, params), (err, info) => {
+    if(err){
+    console.log(err);
+    throw err;
+    }
+
+    info.forEach(file =>{
+      fs.stat(path.join(params, file), (err, fileInfo) => {
+        if(err){
+          console.log(err);
+          throw err;
+          }
+
+        if(fileInfo.isFile()){
+
+          fs.truncate(path.join(__dirname, params, file), (err) => {
+            if(err){
+              console.log(err);
+              throw err;
+              }
+          })}
+        
+        else if(fileInfo.isDirectory()){
+          fs.rename(path.join(__dirname, params, file),
+          path.join(__dirname, params, file + '_new'),  (err) => {
+            if(err){
+              console.log(err);
+              throw err;
+              }
+          })}
+      });
+    });
+  });
+};
+
+readerFile('mainDir');
