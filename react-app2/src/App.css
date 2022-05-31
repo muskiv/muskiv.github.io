@@ -1,0 +1,34 @@
+.app {
+  text-align: center;
+}
+
+.top {
+  display: flex;
+}
+
+.user {
+  width: 50%;
+  background-color: palevioletred;
+}
+
+.post {
+  width: 50%;  
+  background-color: palegreen;
+}
+
+.comment {
+  text-align: left;
+  background-color: cornflowerblue;
+}
+
+.userSolo {
+  margin: 10px;
+}
+
+.postSolo {
+  margin: 10px;
+}
+
+.commentSolo {
+  margin: 10px;
+}
