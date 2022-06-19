@@ -1,0 +1,17 @@
+.user_details_page {
+  width: 50%;
+}
+
+.user_details_page ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.user_details_page button {
+  margin-top: 20px;
+  padding: 10px;
+  background: black;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
