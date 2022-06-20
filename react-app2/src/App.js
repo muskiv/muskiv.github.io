@@ -1,12 +1,15 @@
 import { Routes, Route, } from "react-router-dom";
 
-import './App.css';
-import { UsersPage } from "./pages/UsersPage/UsersPage";
-import { PostsPage } from "./pages/PostsPage/PostsPage";
-import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-import { Layout } from "./components/Layout/Layout";
-import { UserDetailsPage } from "./pages/UsersDetailsPage/UserDetailsPage";
-import { UserPosts } from "./pages/UserPosts/UserPosts";
+import {
+  Layout,
+  UsersPage,
+  UserDetailsPage,
+  UserPosts,
+  PostsPage,
+  PostsDetailsPage,
+  PostCommentsPage,
+  NotFoundPage
+} from './pages';
 
 function App() {
   return (
@@ -19,15 +22,15 @@ function App() {
             </Route>
           </Route>
           <Route path={'posts'} element={<PostsPage />}>
-
+            <Route path={':id'} element={<PostsDetailsPage />}>
+              <Route path={'comments'} element={<PostCommentsPage />} />
+            </Route>
           </Route>
-          <Route path={'*'} element={<NotFoundPage />} >
-
-          </Route>
+          <Route path={'*'} element={<NotFoundPage />} />
         </Route>
       </Routes>
     </>
   )
-}
+};
 
 export default App;

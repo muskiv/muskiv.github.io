@@ -1,0 +1,17 @@
+.posts_details {
+  width: 50%;
+}
+
+.posts_details ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.posts_details button {
+  margin-top: 20px;
+  padding: 10px;
+  background: black;
+  color: red;
+  border: none;
+  cursor: pointer;
+}

@@ -1,9 +1,25 @@
-import React from 'react'
+import { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
+
+import { Post } from '../../components';
+import { postService } from '../../services/posts.service';
+import './PostsPage.css';
 
 const PostsPage = () => {
-  return (
-    <div>PostsPage</div>
-  )
-}
+  const [posts, setPosts] = useState([]);
 
-export  {PostsPage}
+  useEffect(() => {
+    postService.getAll().then(value => setPosts(value))
+  }, []);
+
+  return (
+    <>
+      <div className='posts'>
+        {posts.map(post => <Post key={post.id} post={post} />)}
+      </div>
+      <Outlet />
+    </>
+  )
+};
+
+export { PostsPage };
