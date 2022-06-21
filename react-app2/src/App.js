@@ -8,6 +8,8 @@ import {
   PostsPage,
   PostsDetailsPage,
   PostCommentsPage,
+  AlbumsPage,
+  PhotosPage,
   NotFoundPage
 } from './pages';
 
@@ -19,6 +21,10 @@ function App() {
           <Route path={'users'} element={<UsersPage />}>
             <Route path={':id'} element={<UserDetailsPage />}>
               <Route path={'posts'} element={<UserPosts />} />
+            </Route>
+
+            <Route path={':id/albums'} element={<AlbumsPage/>}>
+
             </Route>
           </Route>
           <Route path={'posts'} element={<PostsPage />}>

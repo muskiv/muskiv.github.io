@@ -5,4 +5,6 @@ export * from './UserPostsPage/UserPostsPage';
 export * from './PostsPage/PostsPage';
 export * from './PostsDetailsPage/PostsDetailsPage';
 export * from './PostCommentsPage/PostCommentsPage';
+export * from './AlbumsPage/AlbumsPage';
+export * from './PhotosPage/PhotosPage';
 export * from './NotFoundPage/NotFoundPage';

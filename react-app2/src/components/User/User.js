@@ -9,6 +9,7 @@ const User = ({ user }) => {
     <div className='user'>
       {id} {name} {username}
       <Link to={id.toString()} state={{ ...user }}><button className='btn'>User Details</button></Link>
+      <Link to={id.toString() + '/albums'} state={{...user }}><button className='btn'>Albums</button></Link>
     </div>
   )
 };
