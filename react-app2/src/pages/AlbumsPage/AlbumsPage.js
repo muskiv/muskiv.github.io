@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, Outlet, useParams } from 'react-router-dom';
-import { albumsService } from '../../services/albums';
 
-import './AlbumsPage.css';
+import { albumsService } from '../../services/albums';
 
 const AlbumsPage = () => {
   const [albums, setAlbums] = useState([]);
@@ -16,7 +15,7 @@ const AlbumsPage = () => {
     <div>
       <div className='albums'>
         {albums.map(value =>
-          <div>
+          <div key={value.id}>
             <div>User Id: {value.userId}</div>
             <div>Id: {value.id}</div>
             <div>Title: {value.title}</div>
