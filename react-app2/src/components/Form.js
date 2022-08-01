@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-const Form = ({getFilter}) => {
+const Form = () => {
 
-  const [form, setForm] = useState({name:'', username:'', email:''});
+  const [form, setForm] = useState({model:'', price:'', year:''});
 
   const formHander = (e) => {
     const eventData = {...form, [e.target.name]:e.target.value}
@@ -11,18 +11,18 @@ const Form = ({getFilter}) => {
 
   const onSubmit = (e) =>{
     e.preventDefault()
-    getFilter(form)
   }
+
   return (
     <div>
       <form>
-        <label>Name: <input type='text' name={'name'} value={form.name} onChange={formHander}/></label>
-        <label>UserName: <input type='text' name={'username'} value={form.username} onChange={formHander}/></label>
-        <label>Email: <input type='text' name={'email'} value={form.email} onChange={formHander}/></label>
-        <button onClick={onSubmit}>Filter</button>
+        <label>Model: <input type='text' name={'model'} value={form.model} onChange={formHander}/></label>
+        <label>Price: <input type='text' name={'price'} value={form.price} onChange={formHander}/></label>
+        <label>Year: <input type='text' name={'year'} value={form.year} onChange={formHander}/></label>
+        <button onClick={onSubmit}>Send</button>
       </form>
     </div>
   )
 }
 
-export default Form
+export {Form}
